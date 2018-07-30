@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            Tuire
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="header">
+            <h2>
+                Tuire
+            </h2>
+            {% include 'includes/menu.html' %}
+        </div> 
+        <p>
+            <!-- HOME.HTML -->
+            {% block body %}
+            {% endblock %}
+        </p>
+       <footer>
+           {% block footer %}
+                OLha o footer
+           {% endblock %}
+       </footer>
+    </body>
+</html>
+
+
+
+<!--
+    <html>
+        <head>
+            <title>
+                aifojdoasj
+            </title>
+        </head>
+        <body>
+            <h2>
+                ojafsod
+            </h2>
+            <p>
+                {{ now|date:"d \d\e F \d\e Y" }}
+            </p>
+        </body>
+    </html>
+-->

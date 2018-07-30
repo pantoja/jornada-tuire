@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% for tuite in tuites %}
+        <div class="tuite" >
+            {{ tuite }}
+        </div>
+    {% endfor %}
+    
+{% endblock %}

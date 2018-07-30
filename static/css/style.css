@@ -1,0 +1,21 @@
+body{
+    background-color: #ececec;
+}
+
+.header{
+    width: 100%;
+    text-align: center
+}
+
+nav a{
+    margin: 10px;
+}
+
+.tuite{
+    width: 100vh;
+    height: 5vh;
+    margin: 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 20px
+}
