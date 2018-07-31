@@ -1,5 +1,5 @@
+from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-
 class User(AbstractUser):
-    pass
+    picture = models.ImageField('Foto de Perfil', default='/img/blank-pic.png')

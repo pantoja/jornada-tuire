@@ -1,4 +1,4 @@
-#!/home/CIN/vpa/jornada/tuirer/venv/bin/python
+#!/home/CIN/vpa/jornada-tuire/venv/bin/python
 
 import sys
 import getopt

@@ -1,4 +1,4 @@
-#!/home/CIN/vpa/jornada/tuirer/venv/bin/python3
+#!/home/CIN/vpa/jornada-tuire/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

@@ -12,10 +12,25 @@ nav a{
 }
 
 .tuite{
-    width: 100vh;
+    width: 80%;
     height: 5vh;
     margin: 5px;
     background-color: #f3f3f3;
     border-radius: 5px;
     padding: 20px
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%
+
+}
+
+.pic-small {
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    border-radius: 50%
 }

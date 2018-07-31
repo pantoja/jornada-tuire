@@ -1,8 +1,9 @@
-<div>
+<div class="tuite" >
     <p>
-        {{ content }}
+        {{ tuite.content }}
     </p>
-    <p>
-        autor: {{ author }}
-    </p>
+    <a href="{% url 'profile' tuite.author.pk %}">
+        <div class="pic-small" style="background-image: url('{{ profile.picture.url }}');" ></div>
+         autor: {{ tuite.author }}
+    </a>
 </div>

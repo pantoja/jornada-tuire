@@ -9,6 +9,9 @@ class Tuite(models.Model):
 
     objects = TuitesManager()
 
+    def get_author_username(self):
+        return self.author.username
+
     def __str__(self):
         return f'{self.author.username}: {self.content}'
     
