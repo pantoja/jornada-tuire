@@ -1,6 +1,7 @@
 from django.contrib import admin
 from tuites.models import Tuite
 
-admin.site.register(Tuite)
+class TuiteAdmin(admin.ModelAdmin):
+    list_display = ('content', 'author', 'date_created')
 
-# Register your models here.
+admin.site.register(Tuite, TuiteAdmin)

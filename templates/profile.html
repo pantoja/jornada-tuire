@@ -3,7 +3,7 @@
 {% block body %}
     <div class="profile-pic" style="background-image: url('{{ profile.picture.url }}');" ></div>
     {% if profile == request.user %}
-        <a href="{% url 'profile-edit' request.user.pk %}">
+        <a href="{% url 'users:profile-edit' request.user.pk %}">
             Editar Perfil
         </a>
     {% endif %}

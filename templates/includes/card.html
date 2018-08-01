@@ -2,7 +2,7 @@
     <p>
         {{ tuite.content }}
     </p>
-    <a href="{% url 'profile' tuite.author.pk %}">
+    <a href="{% url 'users:profile' tuite.author.pk %}">
         <div class="pic-small" style="background-image: url('{{ profile.picture.url }}');" ></div>
          autor: {{ tuite.author }}
     </a>
