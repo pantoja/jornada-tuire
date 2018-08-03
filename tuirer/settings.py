@@ -146,4 +146,4 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 DEFAULT_FROM_EMAIL = 'oi@test.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-django_heroku.settings(locals())
+django-heroku.settings(locals())
