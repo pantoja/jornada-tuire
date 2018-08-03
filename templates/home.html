@@ -8,9 +8,7 @@
     {% endif %}
     
     {% for tuite in tuites %}
-        <div class="tuite" >
-            {{ tuite }}
-        </div>
+        {% include 'includes/card.html' %}
     {% endfor %}
     
 {% endblock %}

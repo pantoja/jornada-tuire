@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -88,7 +89,7 @@ DATABASES = {
 
 # Users
 AUTH_USER_MODEL = 'users.User'
-LOGIN_URL = 'index'
+LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'tuites:post_tuite'
 LOGOUT_REDIRECT_URL = 'index'
 
@@ -144,3 +145,5 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 DEFAULT_FROM_EMAIL = 'oi@test.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+django_heroku.settings(locals())

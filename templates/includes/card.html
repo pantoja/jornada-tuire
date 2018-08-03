@@ -1,3 +1,5 @@
+{% load tuite_likes %}
+
 <div class="tuite" >
     <p>
         {{ tuite.content }}
@@ -5,5 +7,18 @@
     <a href="{% url 'users:profile' tuite.author.pk %}">
         <div class="pic-small" style="background-image: url('{{ profile.picture.url }}');" ></div>
          autor: {{ tuite.author }}
+         
     </a>
+    <div class="likes" >
+        <a href="{% url 'tuites:like' tuite.pk %}">
+            {% tuite_liked_icon %}
+            {{ tuites.likes_count }}
+        </a>
+        <p>
+            Curtido por
+            {% for user_liked in tuite.liked_by.all %}
+                {{ user_liked }}
+            {% endfor%}
+        </p>
+    </div>
 </div>
